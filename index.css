@@ -60,11 +60,59 @@ nav ul li a {
     padding: 80px 5% 20px 5%; 
 }
 
-#hero img {
+#hero .image-container {
+    position: relative;
+    /* The clamp function takesn in three parameters (min, preferred, max) here 300px means no matter how small the screen gets the image won't shrink below this and 45vh in case of ideal value for the image size and 600px is the max size of the image. */
     width: clamp(300px, 45vw, 600px);
     height: clamp(300px, 45vw, 600px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Advanced System Ring */
+#hero .image-container::before {
+    content: "";
+    position: absolute;
+    /* Make the ring slightly larger than the image */
+    inset: -15px; 
+    border-radius: 50%;
+    
+    /* Creating a "dashed" tech ring look */
+    border: 4px dashed orangered;
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+    
+    /* Glow effect for that movie look */
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+    
+    animation: rotationClockWise 4s linear infinite;
+    z-index: -1; /* Place it behind the image */
+}
+
+/* Optional: Add a second, slower inner ring for complexity */
+#hero .image-container::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    border-left: 2px solid orangered;
+    animation: rotationClockWise 8s linear reverse infinite;
+    z-index: -1;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid white; /* Creates a gap between face and ring */
+}
+
+@keyframes rotationClockWise {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .hero-text h2 {
