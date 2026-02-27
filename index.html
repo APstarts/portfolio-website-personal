@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <p>Anurag Pal</p>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#stack">Stack</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- hero section -->
+        <section id="hero">
+            <div class="hero-text-container">
+                <div class="hero-text-left-bar">
+                </div>
+                <div style="display: flex; flex-direction: column;" class="hero-text-sub-container">
+                    <div class="hero-text">
+                        <h2>Do you need a website?</h2>
+                        <p>I am a full stack developer. Building websites, and applications that turn views into leads.
+                        </p>
+                    </div>
+                    <button
+                        style="background-color: orangered; color: white; width: fit-content; padding: 10px; border: none; border-radius: 5px; font-size: 1rem; margin-left: 10px">Contact
+                        Me</button>
+                </div>
+            </div>
+            <div>
+                <img src="./public/me.png" alt="self image">
+            </div>
+        </section>
+
+        <!-- Tech stack cards section -->
+        <section id="stack">
+            <h2 class="stack-title">Tech Stack</h2>
+            <div class="stack-card-container">
+                <div class="card">
+                    <h2>Frontend</h2>
+                    <ul>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>Tailwind</li>
+                        <li>React</li>
+                        <li>Next Js</li>
+                        <li>Javascript</li>
+                        <li>Three Js</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Backend</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>Node Js</li>
+                        <li>Fast API</li>
+                        <li>Postgresql</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>AI/ML</h2>
+                    <ul>
+                        <li>Pytorch</li>
+                        <li>Open AI API</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Security & APIs</h2>
+                    <ul>
+                        <li>JWT</li>
+                        <li>OAuth2</li>
+                        <li>REST</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Linux</h2>
+                    <ul>
+                        <li>Arch Linux</li>
+                        <li>ubuntu</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h2>Data Analysis</h2>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-bio">
+                        I am a Full-Stack Developer driven by system logic and performance. With a background spanning
+                        from <strong>Linux kernel environments</strong> to <strong>AI/ML integration</strong>, I don't
+                        just build interfaces—I architected end-to-end solutions that are scalable by design and
+                        measurable by results.
+                    </p>
+                    <p class="about-bio">
+                        My philosophy is simple: <strong>Code is a liability.</strong> I write clean, modular, and
+                        documented logic to minimize that liability while maximizing the speed and security of the end
+                        product.
+                    </p>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="stat-item">
+                        <h3>System-First</h3>
+                        <p>Deploying on Arch/Ubuntu with a focus on automation and bash scripting.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Data-Driven</h3>
+                        <p>Leveraging Python and Pytorch to build intelligent, predictive features.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Lead-Focused</h3>
+                        <p>Optimizing Next.js and React for SEO and high conversion rates.</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Secure by Default</h3>
+                        <p>Implementing robust OAuth2 and JWT authentication patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="stack-title">Connections</h2>
+            <div class="contact-grid">
+                <div class="contact-card" id="email-card" title="Click to copy email">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>anurag@example.com</p>
+                        <span class="copy-hint">Click to copy</span>
+                    </div>
+                </div>
+
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fa fa-linkedin"></i></div>
+                    <div class="contact-info">
+                        <h3>LinkedIn</h3>
+                        <p>Professional Network</p>
+                        <span class="view-hint">View Profile →</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/yourusername" target="_blank" class="contact-card">
+                    <div class="contact-icon"><i class="fa fa-github"></i></div>
+                    <div class="contact-info">
+                        <h3>GitHub</h3>
+                        <p>Code & Architecture</p>
+                        <span class="view-hint">View Source →</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="copy-toast">Email copied to clipboard!</div>
+        </section>
+
+        <!-- modals -->
+        <div class="modal hidden">
+            <div class="model-content">
+                <p>Email copied successfully!</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
